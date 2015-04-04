@@ -33,9 +33,18 @@ def main():
     print "They are: " 
 
     #This is for loop. We take each element from sys.argv and print it to the consile.
-    for i in sys.argv[1:]:
+    for i in sys.argv[1:]: 
+        
+        a = int(i)
+        
+        if a % 2 == 0:
+            print "your number is even"
+        else:
+            print "your number is odd"
+        
         print str(i)
         print "\n"
 
 if __name__ == '__main__':
     main()
+    
